@@ -1,0 +1,119 @@
+@import "colors/catppuccin/macchiato.css";
+
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window > box {
+  /* background-image: linear-gradient(rgba(31, 35, 41, 0.9), rgba(31, 35, 41, 0.9)); */
+  background-image: url("/home/fattyre/.config/waybar/assets/backgroundblur.png");
+  /* background-color: rgba(31, 35, 41, 0.9); */
+  background-color: transparent;
+  margin-top: 7px;
+  border: solid 3px @fg;
+  border-radius: 10px;
+}
+
+#bluetooth,
+#clock,
+#custom-launcher,
+#custom-notification,
+#custom-screenshot,
+#custom-tray-icon,
+#network,
+#pulseaudio,
+#window,
+#workspaces {
+  background-color: @bg3;
+  border: solid 2px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 0px;
+}
+
+#bluetooth {
+  color: @purple;
+  border-color: @purple;
+  padding: 0px 3px 0px 10px;
+}
+
+#clock {
+  color: @blue;
+  border-color: @blue;
+}
+
+#custom-launcher {
+  color: @yellow;
+  border-color: @yellow;
+  padding: 0px 3px 0px 8px;
+}
+
+#custom-notification {
+  color: @green;
+  border-color: @green;
+  padding: 0px 4px 0px 8px;
+}
+
+#custom-screenshot {
+  color: @red;
+  border-color: @red;
+  padding: 0px 5px 0px 8px;
+}
+
+#custom-tray-icon {
+  color: @orange;
+  border-color: @orange;
+  padding: 0px 3px 0px 8px;
+  margin-right: 10px;
+}
+
+#network {
+  color: @blue;
+  border-color: @blue;
+  padding: 0px 6px 0px 6px;
+}
+
+#pulseaudio {
+  color: @green;
+  border-color: @green;
+  padding: 0px 0px 0px 6px;
+}
+
+#window {
+  color: @yellow;
+  border-color: @yellow;
+  padding: 0px 5px;
+}
+
+#workspaces {
+  border-color: @red;
+  margin-left: 10px;
+}
+
+#workspaces button {
+  border-radius: 2px;
+  background-color: @bg3;
+  margin: 0px;
+  padding: 0px 5px 0px 7px;
+}
+
+#workspaces button.visible {
+  color: @bg3;
+  background-color: @fg;
+}
+
+#workspaces button.active {
+  color: @bg3;
+  background-color: @red;
+}
+
+#tray {
+  margin-right: 10px;
+  margin-left: 10px;
+}
