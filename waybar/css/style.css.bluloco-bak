@@ -1,0 +1,120 @@
+@import "colors/bluloco.css";
+
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+window#waybar {
+  /* background: transparent; */
+}
+
+window > box {
+  background-color: @bg;
+  /* margin-top: 7px; */
+  /* border: solid 2px @text; */
+  /* border-radius: 6px; */
+}
+
+#bluetooth,
+#clock,
+#custom-launcher,
+#custom-notification,
+#custom-screenshot,
+#custom-tray-icon,
+#network,
+#pulseaudio,
+#window,
+#workspaces {
+  background-color: @black;
+  /* border: solid 2px; */
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 0px;
+}
+
+#bluetooth {
+  color: @purple;
+  border-color: @purple;
+  padding: 0px 3px 0px 10px;
+}
+
+#clock {
+  color: @blue;
+  border-color: @blue;
+}
+
+#custom-launcher {
+  color: @yellow;
+  border-color: @yellow;
+  padding: 0px 3px 0px 8px;
+}
+
+#custom-notification {
+  color: @green;
+  border-color: @green;
+  padding: 0px 4px 0px 8px;
+}
+
+#custom-screenshot {
+  color: @red;
+  border-color: @red;
+  padding: 0px 5px 0px 8px;
+}
+
+#custom-tray-icon {
+  color: @cyan;
+  border-color: @cyan;
+  padding: 0px 3px 0px 8px;
+  margin-right: 10px;
+}
+
+#network {
+  color: @blue;
+  border-color: @blue;
+  padding: 0px 6px 0px 6px;
+}
+
+#pulseaudio {
+  color: @green;
+  border-color: @green;
+  padding: 0px 0px 0px 6px;
+}
+
+#window {
+  color: @yellow;
+  border-color: @yellow;
+  padding: 0px 5px;
+}
+
+#workspaces {
+  border-color: @red;
+  margin-left: 10px;
+}
+
+#workspaces button {
+  border-radius: 2px;
+  background-color: @black;
+  margin: 0px;
+  padding: 0px 5px 0px 7px;
+}
+
+#workspaces button:hover {
+  background-color: @blue;
+}
+
+#workspaces button.visible {
+  color: @bg;
+  background-color: @fg;
+}
+
+#workspaces button.active {
+  color: @bg;
+  background-color: @red;
+}
+
+#tray {
+  margin-right: 10px;
+  margin-left: 10px;
+}

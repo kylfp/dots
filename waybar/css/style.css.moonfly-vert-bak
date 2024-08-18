@@ -1,4 +1,4 @@
-@import "colors/tokyonight.css";
+@import "colors/moonfly.css";
 
 * {
   font-family: Titillium;
@@ -12,7 +12,7 @@ window#waybar {
 
 window > box {
   background-color: @bg;
-  margin: 20px 10px 20px 10px;
+  margin: 10px;
   /* border: solid 2px @text; */
   border-radius: 6px;
 }
@@ -27,7 +27,7 @@ window > box {
 #pulseaudio,
 #window,
 #workspaces {
-  background-color: @bgHigh;
+  background-color: @grey11;
   border: solid 2px;
   border-radius: 5px;
   margin: 0px 5px;
@@ -94,7 +94,7 @@ window > box {
 }
 
 #workspaces button:hover {
-  background-color: @bg;
+  background-color: @grey11;
 }
 
 /* Sway */
@@ -125,23 +125,23 @@ window > box {
 #workspaces button {
   border-radius: 2px;
   color: @white;
-  background-color: @bgHigh;
+  background-color: @grey11;
   margin: 0px;
   padding: 0px;
 }
 
 #workspaces button:hover {
-  background-color: @bgHigh;
+  background-color: @grey11;
 }
 
 #workspaces button.visible {
   color: @blue;
-  background-color: @bgHigh;
+  background-color: @grey11;
 }
 
 #workspaces button.active {
   color: @red;
-  background-color: @bgHigh;
+  background-color: @grey11;
 }
 
 #tray {
