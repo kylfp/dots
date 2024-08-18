@@ -1,10 +1,10 @@
 format = """
 $time\
-[  ](bold #f9c859)\
+[  ](bold #e3c78a)\
 $os\
-[  ](bold #3476ff)\
+[  ](bold #80a0ff)\
 $directory\
-[  ](bold #fc2f52)\
+[  ](bold #ff5454)\
 $git_branch\
 $git_status\
 $character\
@@ -16,7 +16,7 @@ $time\
 
 [os]
 disabled = false
-style = "bold fg:#3476ff"
+style = "bold fg:#80a0ff"
 format = '[$symbol$name]($style)'
 
 [os.symbols]
@@ -42,7 +42,7 @@ RedHatEnterprise = "󱄛"
 EndeavourOS= " "
 
 [directory]
-style = "bold fg:#fc2f52"
+style = "bold fg:#ff5454"
 format = '[  $path]($style)'
 truncation_length = 3
 truncation_symbol = "…/"
@@ -56,20 +56,20 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "blink bold fg:#25a45c"
+style = "blink bold fg:#8cc85f"
 format = '[$symbol $branch ]($style)'
 
 [git_status]
-style = "blink bold fg:#25a45c"
+style = "blink bold fg:#8cc85f"
 format = '[$all_status$ahead_behind  ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bold fg:#f9c859"
+style = "bold fg:#e3c78a"
 format = '[ 󱑂 $time]($style)'
 
 [character]
 disabled = false
-success_symbol = '[󱦰 ](bold fg:#25a45c)'
-error_symbol = '[󱦰 ](bold fg:#fc2f52)'
+success_symbol = '[󱦰 ](bold fg:#8cc85f)'
+error_symbol = '[󱦰 ](bold fg:#ff5454)'
